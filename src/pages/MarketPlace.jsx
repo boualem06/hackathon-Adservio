@@ -30,7 +30,7 @@ const MarketPlace = () => {
         </div>
 
         {/* Cards Conainer */}
-        <div className='flex flex-wrap gap-[6%] justify-start'>
+        <div className='h-full flex flex-wrap gap-[6%] justify-start'>
           {/* First Row */}
           <Card name="Manteau" price="1000 dz" image={Item1}/>
           <Card name="Sac" price="1000 dz" image={Item2}/>

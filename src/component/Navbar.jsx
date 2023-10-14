@@ -9,7 +9,7 @@ function Navbar() {
   const [score, setScore] = useState(10);
 
   const location = useLocation();
-  const isUserLoggedIn = !['', '/', '/signup', '/login', '/market-place'].includes(location.pathname)
+  const isUserLoggedIn = !['', '/', '/signup', '/login', '/market-place', '/market-place/Manteau'].includes(location.pathname)
 
   return (
     <nav className="relative z-[1000] bg-white font-bold w-full shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
@@ -88,8 +88,8 @@ function Navbar() {
           </Link>
 
           <Link
-            className={`my-2 text-gray-700 duration-300 transform p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
-            to="/"
+            className={`my-2 text-gray-700 duration-300 transform p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/market-place" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
+            to="/market-place"
           >
             Marketplace
           </Link>

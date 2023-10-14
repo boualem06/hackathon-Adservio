@@ -9,6 +9,7 @@ import DonateMoney from './pages/Donate'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import MarketPlace from './pages/MarketPlace'
+import Item1 from './pages/Item1'
 
 function App () {
   return (
@@ -26,6 +27,7 @@ function App () {
             <Route path='donate' element={<DonateMoney/>} />
           </Route>
           <Route path='market-place' element={<MarketPlace/>}/>
+          <Route path='market-place/Manteau' element={<Item1/>}/>
         </Routes>
       </Router>
 
