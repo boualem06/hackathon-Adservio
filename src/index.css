@@ -10,11 +10,11 @@
 }
 
 #root {
-  /* height: 100vh; */
-  display: flex;
+  height: 100vh;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column; */
   gap: 1em;
   font-family: sans-serif;
   color: #333;
