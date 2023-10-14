@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar />
       <div
         style={divStyle}
-        className="w-full h-full bg-cover bg-opacity-30 flex justify-center items-center"
+        className="w-full h-screen bg-cover bg-opacity-30 flex justify-center items-center"
       >
         <div className="w-[40%] h-2/3 bg-white rounded-xl flex flex-col gap-6">
           <img src={Cross} alt="cross icon" className="self-end mr-2 mt-1" />
