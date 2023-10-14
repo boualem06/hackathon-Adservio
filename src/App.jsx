@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="cpanel" element={<Layout />}>
             <Route index element={<Collecteur />} />
-            <Route path="Collecteur" element={<Benevole />} />
+            <Route path="Benevole" element={<Benevole />} />
             <Route path="Entrepot" element={<Entrepot />} />
           </Route>
         </Routes>
