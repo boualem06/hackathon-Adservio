@@ -1,7 +1,12 @@
 import bg from '../images/bg.png'
 import Navbar from '../component/Navbar'
+import { useNavigate } from 'react-router-dom'
+import Popup from 'reactjs-popup'
+import LoginWindow from '../component/Shared/PopupWindows/LoginWindow';
 
-const Home = () => {
+const Login = () => {
+  const navigate = useNavigate()
+
   const divStyle = {
     backgroundImage: `url(${bg})`,
     backgroundSize: 'cover',
@@ -16,10 +21,18 @@ const Home = () => {
         style={divStyle}
         className={`w-full h-screen bg-cover bg-opacity-30 flex justify-center items-center`}
       >
-        hello here
+        <Popup
+          modal
+          open={true}
+          closeOnDocumentClick={false}
+          nested
+        > 
+          <LoginWindow/>
+          
+        </Popup>
       </div>
     </>
   )
 }
 
-export default Home
+export default Login

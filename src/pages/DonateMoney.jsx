@@ -16,13 +16,6 @@ const DonateMoney = () => {
 
             <p className='mt-4'>Choisissez la maniére de faire un don</p>
 
-            {/* select menu to choose the type of donation */}
-            {/* <select className="bg-white p-3">
-            <option value="electronic">Paiment Electronique</option>
-            <option value="infos">Informations Bancaires</option>
-            <option value="ads">Espace Pub</option>
-            </select> */}
-
             <div>
                 {/* select menu to choose the type of donation, with option state handle */}
                 <select className="bg-white p-3 mt-8 mb-12 border-[3px] rounded-xl border-[#E1CEB6]" onChange={(e) => setDonationType(e.target.value)}>

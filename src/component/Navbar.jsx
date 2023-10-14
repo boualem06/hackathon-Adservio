@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 function Navbar() {
+  const location = useLocation();
+
   return (
     <nav className="relative bg-white shadow dark:bg-gray-800">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
@@ -51,24 +53,28 @@ function Navbar() {
         {/* 'opacity-0 -translate-x-full' */}
         <div className="translate-x-0 opacity-100 absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
           <div className="flex flex-col md:flex-row md:mx-6 p-2">
+            {/* Navbar item with an underline (using the 'before' pseudo-element) when active */}
             <Link
-              className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:p-2 rounded-lg hover:bg-[#E1CEB6] dark:hover:text-blue-400 md:mx-4 md:my-0"
-              to="#"
+              className={`my-2 text-gray-700 duration-300 transform dark:text-gray-200 p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
+              to="/"
             >
               About
             </Link>
-            <button
-              className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:bg-[#E1CEB6] hover:p-2 rounded-lg dark:hover:text-blue-400 md:mx-4 md:my-0"
-              href="#"
-            >
-              Sign In
-            </button>
-            <button
-              className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:bg-[#E1CEB6] hover:p-2 rounded-lg dark:hover:text-blue-400 md:mx-4 md:my-0"
-              href="#"
+            
+            <Link
+              className={`my-2 text-gray-700 duration-300 transform dark:text-gray-200 p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/signup" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
+              to="/signup"
             >
               Sign Up
-            </button>
+            </Link>
+
+            <Link
+              className={`my-2 text-gray-700 duration-300 transform dark:text-gray-200 p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/login" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
+              to="/login"
+            >
+              Log In
+            </Link>
+            
           </div>
         </div>
       </div>

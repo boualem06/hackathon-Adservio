@@ -6,6 +6,8 @@ import Benevole from './pages/Benevole'
 import Collecteur from './pages/Collecteur'
 import Entrepot from './pages/Entrepot'
 import DonateMoney from './pages/DonateMoney'
+import Signup from './pages/Signup'
+import Login from './pages/Login'
 
 function App () {
   return (
@@ -13,6 +15,9 @@ function App () {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+
           <Route path="cpanel" element={<Layout />}>
             <Route index element={<Collecteur />} />
             <Route path="Benevole" element={<Benevole />} />
