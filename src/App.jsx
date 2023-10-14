@@ -9,9 +9,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-     <Layout></Layout>
-    </>
+    <div className='w-full'>
+<Layout></Layout>
+    </div>
+     
+    
   )
 }
 
