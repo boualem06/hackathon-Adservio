@@ -2,25 +2,28 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import SideBar from './SideBar'
 import NavbarCpanel from './NavbarCpanel'
+import Navbar from './Navbar'
 
 const Layout = () => {
   const [open, setOpen] = React.useState(false)
   return (
     <>
-      <SideBar
+      {/* <SideBar
         open={open}
         setOpen={() => {
           setOpen(!open)
         }}
       />
-      <div className="relative z-40 w-full lg:w-4/5 p-3 pt-0 lg:ml-[20%]">
-        <NavbarCpanel
+      */}
+      <div className="relative z-40 w-full  p-3 pt-0 ">
+        {/* <NavbarCpanel
           setOpen={() => {
             setOpen(!open)
           }}
-        />
+        />  */}
+         <Navbar /> 
         <Outlet />
-      </div>
+      </div> 
     </>
   )
 }

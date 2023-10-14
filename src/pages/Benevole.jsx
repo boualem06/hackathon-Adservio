@@ -47,6 +47,7 @@ const Benevole = () => {
 
   ])
   return (
+
     <div className='pt-20 w-full flex flex-col items-center justify-center'>
       <div className='flex mb-4 justify-between items-center '>
         <button
@@ -60,7 +61,7 @@ const Benevole = () => {
           }}
         >
           {' '}
-          Collecter
+          Collecteur
         </button>
         <button
           className={`  px-6  py-1 ${
@@ -77,6 +78,19 @@ const Benevole = () => {
         </button>
         <button
           className={`  px-6  py-1 ${
+            tuched == 'four'
+              ? 'font-bold bg-[#E1CEB6] text-white'
+              : 'text-black border border-[#E1CEB6]'
+          } rounded-lg mr-4`}
+          onClick={() => {
+            setTuched('four')
+          }}
+        >
+          {' '}
+          Mes Collecteurs 
+        </button>
+        <button
+          className={`  px-6  py-1 ${
             tuched == 'three'
               ? 'font-bold bg-[#E1CEB6] text-white'
               : 'text-black border border-[#E1CEB6]'
@@ -88,12 +102,14 @@ const Benevole = () => {
           {' '}
           Messsages
         </button>
+
+       
       </div>
          
       {(tuched == 'one' || tuched == 'two') && <button className="px-6  py-1 ont-bold bg-[#E1CEB6] text-white rounded-lg mb-4 hover:shadow-md hover:shadow-black" onClick={()=>{setData(data.slice(0,-3))}} >filtrer les plus proche </button>}  
-      {(tuched == 'one' || tuched == 'two') && <MapComponent data={data}></MapComponent>}
+      {(tuched == 'one' || tuched == 'two' || tuched == 'four' ) && <MapComponent data={data}></MapComponent>}
       {tuched == 'three' && (
-        <div>
+        <div className='p-4'>
           <img src={chat}></img>
         </div>
       )}

@@ -17,7 +17,7 @@ export default function SideBar({ open, setOpen }) {
     <div
       className={
         open
-          ? 'w-3/5 h-screen fixed z-50 overflow-auto flex flex-col bg-pramery transition transform translate-x-0 bg-[#E1CEB6]'
+          ? 'w-1/5 h-screen fixed z-50 overflow-auto flex flex-col bg-pramery transition transform translate-x-0 bg-[#E1CEB6]'
           : 'md:w-1/5 h-screen fixed z-50 overflow-auto lg:flex flex-col bg-pramery hidden transition bg-[#E1CEB6]'
       }
     >
