@@ -7,24 +7,27 @@ import Navbar from './Navbar'
 const Layout = () => {
   const [open, setOpen] = React.useState(false)
   return (
-    <>
-      {/* <SideBar
-        open={open}
-        setOpen={() => {
-          setOpen(!open)
-        }}
-      />
-      */}
-      <div className="relative z-40 w-full  p-3 pt-0 ">
+    <div className='relative h-screen flex flex-col'>
+
+      <Navbar /> 
+
+      <div className="relative z-40 w-full h-full flex justify-between pt-0 ">
         {/* <NavbarCpanel
           setOpen={() => {
             setOpen(!open)
           }}
         />  */}
-         <Navbar /> 
+
+        <SideBar
+          open={open}
+          setOpen={() => {
+            setOpen(!open)
+          }}
+        />
+
         <Outlet />
       </div> 
-    </>
+    </div>
   )
 }
 

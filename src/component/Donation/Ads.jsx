@@ -7,7 +7,7 @@ const Ads = () => {
     <div className='w-full flex flex-col'>
         <p className='mb-12'>Regardez des pubs  pour nous aider à collecter de l&apos;argent</p>
 
-        <div className='relative w-[80%] self-center border border-black'>
+        <div className='relative w-[60%] self-center border border-black'>
             <img src={Fanta} alt="fanta background" className='z-10 w-full'/>
             {/* gray overlay */}
             <div className='absolute w-full h-full top-0 bg-black z-20 opacity-50'></div>

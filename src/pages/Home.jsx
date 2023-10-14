@@ -10,15 +10,15 @@ const Home = () => {
   }
 
   return (
-    <>
+    <div className='h-screen overflow-y-hidden'>
       <Navbar />
       <div
         style={divStyle}
-        className={`w-full h-screen bg-cover bg-opacity-30 flex justify-center items-center`}
+        className={`w-full h-full bg-cover bg-opacity-30 flex justify-center items-center`}
       >
         hello here
       </div>
-    </>
+    </div>
   )
 }
 

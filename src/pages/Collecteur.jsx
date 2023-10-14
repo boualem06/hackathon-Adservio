@@ -20,7 +20,7 @@ const Collecteur = () => {
   }
 
   return (
-    <>
+    <div className='pt-4 pl-4 flex flex-col w-full'>
       <h1 className="text-3xl font-bold">Collecteur </h1>
 
       <div className="lg:w-5/12 m-auto w-full flex-col bg-red-300 items-center justify-center mt-0 ">
@@ -126,7 +126,7 @@ const Collecteur = () => {
           <input className="mt-2" type="checkbox"></input>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -17,8 +17,8 @@ export default function SideBar({ open, setOpen }) {
     <div
       className={
         open
-          ? 'w-1/5 h-screen fixed z-50 overflow-auto flex flex-col bg-pramery transition transform translate-x-0 bg-[#E1CEB6]'
-          : 'md:w-1/5 h-screen fixed z-50 overflow-auto lg:flex flex-col bg-pramery hidden transition bg-[#E1CEB6]'
+          ? 'w-1/5 h-screen fixed lg:static z-50 overflow-auto flex flex-col bg-pramery transition transform translate-x-0 bg-[#E1CEB6]'
+          : 'md:w-1/5 h-screen fixed lg:static z-50 overflow-auto lg:flex flex-col bg-pramery hidden transition bg-[#E1CEB6]'
       }
     >
       <div className="flex flex-col w-2/3 m-auto mt-4 gap-10">
@@ -31,10 +31,8 @@ export default function SideBar({ open, setOpen }) {
             <AiOutlineClose size="25px" className="text-white" />
           </button>
         </div>
-        <div className="w-full m-auto h-20 flex justify-center items-center lg:mt-5 ">
-          logo
-        </div>
-        <div className="w-full m-auto flex flex-col items-center gap-4 ">
+        
+        <div className="w-full m-auto lg:mt-32 flex flex-col items-center gap-4 ">
           <div className="group group1">
             <Link to="/cpanel" className="flex gap-3 text-left w-40 ">
               <p

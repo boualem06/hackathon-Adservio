@@ -5,9 +5,10 @@ import Home from './pages/Home'
 import Benevole from './pages/Benevole'
 import Collecteur from './pages/Collecteur'
 import Entrepot from './pages/Entrepot'
-import DonateMoney from './pages/DonateMoney'
+import DonateMoney from './pages/Donate'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
+import MarketPlace from './pages/MarketPlace'
 
 function App () {
   return (
@@ -22,8 +23,9 @@ function App () {
             <Route index element={<Collecteur />} />
             <Route path="Benevole" element={<Benevole />} />
             <Route path="Entrepot" element={<Entrepot />} />
-            <Route path='donate/money' element={<DonateMoney/>} />
+            <Route path='donate' element={<DonateMoney/>} />
           </Route>
+          <Route path='market-place' element={<MarketPlace/>}/>
         </Routes>
       </Router>
 
