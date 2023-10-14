@@ -1,16 +1,12 @@
-<<<<<<< HEAD
-import React from "react"
 
-function Navbar() {
-  const [open,setOpen]=React.useState(false)
-  
-=======
+import React from "react"
 import { Link, useLocation } from "react-router-dom"
 
 function Navbar() {
+  const [open,setOpen]=React.useState(false)  
+
   const location = useLocation();
 
->>>>>>> d6f200e2ec9395f548e6c8e9ee96cb901c66ca1a
   return (
     <nav className="relative bg-white shadow dark:bg-gray-800 w-full">
         <div className="container px-6 py-4 mx-auto">
@@ -62,37 +58,6 @@ function Navbar() {
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-=======
-        {/* 'opacity-0 -translate-x-full' */}
-        <div className="translate-x-0 opacity-100 absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
-          <div className="flex flex-col md:flex-row md:mx-6 p-2">
-            {/* Navbar item with an underline (using the 'before' pseudo-element) when active */}
-            <Link
-              className={`my-2 text-gray-700 duration-300 transform dark:text-gray-200 p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
-              to="/"
-            >
-              About
-            </Link>
-            
-            <Link
-              className={`my-2 text-gray-700 duration-300 transform dark:text-gray-200 p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/signup" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
-              to="/signup"
-            >
-              Sign Up
-            </Link>
-
-            <Link
-              className={`my-2 text-gray-700 duration-300 transform dark:text-gray-200 p-2 rounded-lg hover:bg-[#E1CEB6] md:mx-4 md:my-0 transition-all ${location.pathname === "/login" ? "before:absolute before:inset-x-0 before:bottom-0 before:h-[3px] before:bg-[#E1CEB6] hover:before:opacity-0 before:rounded-sm before:mt-[-1px]" : ""}`}
-              to="/login"
-            >
-              Log In
-            </Link>
-            
-          </div>
-        </div>
-      </div>
->>>>>>> d6f200e2ec9395f548e6c8e9ee96cb901c66ca1a
     </nav>
   )
 }
