@@ -6,7 +6,7 @@ import Benevole from './pages/Benevole'
 import Collecteur from './pages/Collecteur'
 import Entrepot from './pages/Entrepot'
 
-function App() {
+function App () {
   return (
     <>
       <Router>
@@ -19,6 +19,11 @@ function App() {
           </Route>
         </Routes>
       </Router>
+
+      {/* <div>
+        <ChatBox />
+        <SendMessage />
+      </div> */}
     </>
   )
 }
