@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './pages/Home'
 import Layout from './component/layout'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Benevole from './pages/Benevole'
+import Collecteur from './pages/Collecteur'
+import Entrepot from './pages/Entrepot'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='w-full'>
-<Layout></Layout>
-    </div>
-     
-    
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="cpanel" element={<Layout />}>
+            <Route index element={<Collecteur />} />
+            <Route path="Collecteur" element={<Benevole />} />
+            <Route path="Entrepot" element={<Entrepot />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   )
 }
 
