@@ -13,7 +13,7 @@ const Layout = () => {
           setOpen(!open)
         }}
       />
-      <div className=" w-full lg:w-4/5 p-3 pt-0 lg:ml-[20%]">
+      <div className="relative z-40 w-full lg:w-4/5 p-3 pt-0 lg:ml-[20%]">
         <NavbarCpanel
           setOpen={() => {
             setOpen(!open)
