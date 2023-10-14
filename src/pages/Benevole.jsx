@@ -90,7 +90,7 @@ const Benevole = () => {
         </button>
       </div>
          
-      {(tuched == 'one' || tuched == 'two') && <button onClick={()=>{setData(data.slice(0,-3))}} className=''>filtrer les plus proche </button>}  
+      {(tuched == 'one' || tuched == 'two') && <button className="px-6  py-1 ont-bold bg-[#E1CEB6] text-white rounded-lg mb-4 hover:shadow-md hover:shadow-black" onClick={()=>{setData(data.slice(0,-3))}} >filtrer les plus proche </button>}  
       {(tuched == 'one' || tuched == 'two') && <MapComponent data={data}></MapComponent>}
       {tuched == 'three' && (
         <div>
