@@ -10,7 +10,7 @@ const SignupWindow = () => {
 
     const handleSignup = (e) => {
         e.preventDefault()
-        navigate('/cpanel')
+        navigate('/cpanel/Benevole')
     }    
 
     return (
