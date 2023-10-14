@@ -7,7 +7,7 @@ import Collecteur from './pages/Collecteur'
 import Entrepot from './pages/Entrepot'
 import DonateMoney from './pages/DonateMoney'
 
-function App() {
+function App () {
   return (
     <>
       <Router>
@@ -21,6 +21,11 @@ function App() {
           </Route>
         </Routes>
       </Router>
+
+      {/* <div>
+        <ChatBox />
+        <SendMessage />
+      </div> */}
     </>
   )
 }
