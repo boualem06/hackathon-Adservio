@@ -48,7 +48,7 @@ export default function SideBar({ open, setOpen }) {
           </div>
 
           <div className="group2 group">
-            <Link to="Collecteur" className="flex gap-3 w-40 text-left ">
+            <Link to="/cpanel/Benevole" className="flex gap-3 w-40 text-left ">
               <p
                 className={
                   location.pathname.split('/')[1] === 'Collecteur'

@@ -27,7 +27,7 @@ function App () {
             <Route path='donate' element={<DonateMoney/>} />
           </Route>
           <Route path='market-place' element={<MarketPlace/>}/>
-          <Route path='market-place/Manteau' element={<Item1/>}/>
+          <Route path='market-place/Manteau' element={<Item1 na s/>}/>
         </Routes>
       </Router>
 

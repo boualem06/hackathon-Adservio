@@ -10,7 +10,7 @@ const SignupWindow = () => {
 
     const handleSignup = (e) => {
         e.preventDefault()
-        console.log('signup')
+        navigate('/cpanel')
     }    
 
     return (
@@ -22,30 +22,35 @@ const SignupWindow = () => {
               name="firstName"
               placeholder="Entrer votre prenom"
               type="text"
+              value="Ayyoub"
             />
             <TextInput
               title="Nom"
               name="lastName"
               placeholder="Entrer votre nom"
               type="text"
+              value="Kasmi"
             />
             <TextInput
               title="Email"
               name="email"
               placeholder="Entrer votre email"
               type="text"
+              value="email@service.com"
             />
             <TextInput
               title="Numero de telephone"
               name="phoneNumber"
               placeholder="Entrer votre numero de telephone"
               type="text"
+              value="06 12 34 56 78 90"
             />
             <TextInput
               title="Mot de passe"
               name="password"
               placeholder="Entrer votre mot de passe"
               type="password"
+              value="daklfjsdkfhjksdhfjka"
             />
 
             {/* Checkboxes list of 'Collecteur', 'Benevole' and 'Depot'*/}
@@ -55,6 +60,7 @@ const SignupWindow = () => {
                     type="checkbox"
                     name="collecteur"
                     id="collecteur"
+                    checked="true"
                     className="appearance-none border-[3px] border-[#E1CEB6] rounded-md w-9 h-9 grid place-content-center before:bg-[url('/src/assets/check-icon.svg')] before:bg-contain before:bg-no-repeat bg-white
                 before:w-[1em]  before:h-[1em] before:scale-0 checked:before:scale-100 "
                 />
@@ -66,6 +72,7 @@ const SignupWindow = () => {
                     type="checkbox"
                     name="benevole"
                     id="benevole"
+                    checked
                     className="appearance-none border-[3px] border-[#E1CEB6] rounded-md w-9 h-9 grid place-content-center before:bg-[url('/src/assets/check-icon.svg')] before:bg-contain before:bg-no-repeat bg-white
                 before:w-[1em]  before:h-[1em] before:scale-0 checked:before:scale-100 "
                 />
